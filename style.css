@@ -1,0 +1,438 @@
+/* ========================================================== */
+/* 🚀 CSS Pofolio Keren Anak IT (Deep Dark Mode) v1.0 🚀 */
+/* ========================================================== */
+
+:root {
+  /* --- Warna Utama (Deep Dark Theme) --- */
+  --primary-color: #00bcd4; /* Cyber Blue/Cyan yang Cerah */
+  --primary-darker: #0097a7; /* Untuk Efek Hover/Active */
+
+  --background-main: #0a0a0a; /* Ultra Dark Background (Hampir Hitam) */
+  --card-bg: #1c1c1c; /* Latar Belakang Card/Container */
+  --text-main: #e0e0e0; /* Teks Utama (Off-White) */
+  --text-secondary: #a0a0a0; /* Teks Sekunder/Caption */
+
+  --text-inverse: #0a0a0a; /* Teks di atas tombol aksen (Hitam) */
+
+  --text-accent: var(--primary-color);
+  --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Shadow yang Lebih Dalam */
+  --border-color: rgba(255, 255, 255, 0.08); /* Border tipis untuk pemisah */
+  --transition-speed: 0.3s;
+  --font-family: "Inter", sans-serif;
+}
+
+/* --- Terapkan Light Mode (Untuk Kompatibilitas) --- */
+[data-theme="light"] {
+  --primary-color: #0097a7;
+  --primary-darker: #007985;
+
+  --background-main: #f4f7f6;
+  --card-bg: #ffffff;
+  --text-main: #1f1f1f;
+  --text-secondary: #6a6a6a;
+
+  --text-inverse: #ffffff;
+
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --border-color: rgba(0, 0, 0, 0.1);
+
+  background-color: var(--background-main) !important;
+  color: var(--text-main) !important;
+}
+
+/* --- Default Styling (Wajib) --- */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-main); /* Default ke dark mode */
+  color: var(--text-main);
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: var(--text-main);
+}
+.bg-card {
+  background-color: var(--card-bg) !important;
+  transition: background-color var(--transition-speed);
+}
+.text-light-muted {
+  color: var(--text-main) !important;
+}
+.text-secondary-muted {
+  color: var(--text-secondary) !important;
+}
+.text-accent {
+  color: var(--text-accent) !important;
+}
+
+/* --- 1. Navigation Bar (Navbar) --- */
+.navbar {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  background-color: rgba(
+    10,
+    10,
+    10,
+    0.95
+  ) !important; /* Semi-transparan untuk efek keren */
+  transition: all var(--transition-speed);
+}
+[data-theme="light"] .navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--text-main);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+.nav-link:hover {
+  color: var(--text-accent);
+}
+
+/* --- 2. Buttons & Theme (Aksen Keren) --- */
+.btn-accent {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-inverse);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3); /* Neon glow */
+  transition: all var(--transition-speed);
+}
+.btn-accent:hover {
+  background-color: var(--primary-darker);
+  border-color: var(--primary-darker);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 151, 167, 0.5);
+}
+.btn-outline-light-muted {
+  border: 1px solid var(--text-secondary);
+  color: var(--text-secondary);
+  border-radius: 0.5rem;
+  transition: all var(--transition-speed);
+}
+.btn-outline-light-muted:hover {
+  border-color: var(--text-accent);
+  background-color: rgba(0, 188, 212, 0.1);
+  color: var(--text-accent);
+  transform: translateY(-2px);
+}
+
+/* --- 3. Hero Section --- */
+#hero {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.hero-name {
+  line-height: 1.2;
+  color: var(--text-main);
+  /* Efek teks keren untuk nama */
+  text-shadow: 0 0 5px rgba(0, 188, 212, 0.4);
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Card Flip Effect */
+.card-flip-container {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  height: 400px;
+}
+.card-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card-flip-container:hover .card-flip-inner {
+  transform: rotateY(180deg);
+}
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* --- 4. General Section Titles --- */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 3rem;
+  /* Garis bawah aksen */
+  border-bottom: 4px solid var(--primary-color);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* --- 5. About Section --- */
+.about-img {
+  max-width: 300px;
+  border-radius: 50%;
+  /* Border tebal dengan warna card untuk memisahkan */
+  border: 8px solid var(--card-bg);
+  box-shadow: var(--box-shadow);
+}
+.info-list {
+  padding-left: 0;
+}
+.info-list li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+/* --- 6. Skills Section --- */
+.skill-group-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  /* Garis vertikal di kiri */
+  border-left: 4px solid var(--primary-color);
+  padding-left: 10px;
+  color: var(--text-accent);
+}
+
+.skill-tag {
+  /* Tag untuk Hard Skills */
+  background-color: rgba(0, 188, 212, 0.15);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--primary-color);
+  transition: transform 0.2s;
+}
+.skill-tag:hover {
+  transform: scale(1.05);
+}
+
+.skill-tag-soft {
+  /* Tag untuk Soft Skills (Lebih subtle) */
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s;
+}
+.skill-tag-soft:hover {
+  border-color: var(--text-accent);
+  color: var(--text-accent);
+  transform: scale(1.05);
+}
+
+/* --- 7. Experience Section (Timeline) --- */
+.experience-timeline {
+  position: relative;
+  max-width: 100%;
+  padding-left: 20px;
+  border-left: 2px solid var(--border-color);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 30px;
+}
+.timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 4px solid var(--background-main); /* Border agar dot terlihat di atas background */
+}
+.card-clean {
+  background-color: var(--card-bg) !important;
+  border-radius: 0.75rem;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-clean:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+}
+.exp-date {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-accent);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.exp-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: var(--primary-color); /* Judul pengalaman pakai aksen */
+}
+
+/* --- 8. Projects Section --- */
+.project-card-v2 {
+  background-color: var(--card-bg) !important;
+  border-radius: 0.75rem;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card-v2:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 1);
+}
+.project-icon {
+  font-size: 2.2rem;
+}
+.project-link {
+  color: var(--text-secondary);
+  transition: color var(--transition-speed);
+}
+.project-link:hover {
+  color: var(--text-accent);
+}
+.project-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  min-height: 3rem;
+}
+.project-tags span {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.3rem;
+  font-size: 0.75rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  border: 1px solid var(--border-color);
+}
+
+/* --- 9. Contact Section & Links --- */
+.link-minimal {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  transition: all var(--transition-speed);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  background-color: var(--card-bg);
+}
+.link-minimal:hover {
+  color: var(--text-accent);
+  border-color: var(--text-accent);
+  background-color: rgba(0, 188, 212, 0.1);
+  transform: translateY(-2px);
+}
+
+/* --- 10. Footer --- */
+.footer {
+  background-color: var(--card-bg) !important;
+  border-top: 1px solid var(--border-color);
+}
+.link-minimal-icon {
+  color: var(--text-secondary);
+  font-size: 1.8rem;
+  transition: color var(--transition-speed);
+}
+.link-minimal-icon:hover {
+  color: var(--text-accent);
+}
+
+/* --- 11. Preloader Styling --- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-main); /* Pastikan ini gelap */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.2); /* Border abu-abu transparan */
+  border-top-color: var(--primary-color); /* Aksen Cyber Blue/Cyan */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- 12. Responsiveness (Mobile Friendly) --- */
+@media (max-width: 991px) {
+  #hero {
+    padding-top: 100px;
+    min-height: auto;
+  }
+  .hero-name {
+    font-size: 2.5rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  /* Mengubah timeline agar lebih mudah dilihat di mobile */
+  .experience-timeline {
+    border-left: 2px solid var(--border-color);
+    padding-left: 20px;
+  }
+  .timeline-item {
+    padding-left: 0;
+  }
+  .timeline-dot {
+    left: -13px;
+  }
+}

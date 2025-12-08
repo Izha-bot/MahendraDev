@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Izha Mahendra - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Menambahkan Font Inter dari Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader-content">
+        <div class="loader-spinner"></div>
+        <p class="text-accent fw-bold mt-3 mb-0">Loading...</p>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-accent" href="#hero">Mahendra</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Keahlian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Pengalaman</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#projects">Projek</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <header
+        id="hero"
+        class="d-flex align-items-center justify-content-center text-center">
+        <div class="container text-center text-lg-start">
+          <div class="row align-items-center">
+            <div
+              class="col-lg-6 order-lg-1 order-2 ms-lg-11"
+              data-aos="fade-right">
+              <p class="h5 text-accent mb-3">👋 Halo, saya</p>
+              <h1 class="display-3 fw-bold hero-name">
+                Muhammad Izha Mahendra
+              </h1>
+              <h2 class="h3 mb-4 text-light-muted">
+                Fullstack Developer & Cyber Security Enthusiast
+              </h2>
+              <p class="lead mb-4 text-secondary-muted">
+                Merancang dan mengimplementasikan aplikasi web yang
+                komprehensif, aman, dan efisien dari front-end hingga back-end.
+              </p>
+              <a href="#projects" class="btn btn-accent btn-lg me-3"
+                >Lihat Projek Saya</a
+              >
+              <a
+                href="mailto:masizha6@gmail.com"
+                class="btn btn-outline-light-muted btn-lg"
+                >Hubungi Saya</a
+              >
+            </div>
+
+            <div
+              class="col-lg-6 order-lg-2 order-1 text-center mb-5 mb-lg-0"
+              data-aos="fade-left">
+              <div class="card-flip-container touch-move">
+                <div class="card-flip-inner">
+                  <div class="card-face card-front">
+                    <!-- Placeholder image URL, harap ganti dengan file lokal 'foto.jpg' atau URL nyata -->
+                    <img
+                      src="foto.jpg"
+                      class="img-fluid hero-img"
+                      alt="Foto Profil Utama"
+                      onerror="this.src='https://placehold.co/400x400/2a2a2a/f0f0f0?text=Foto+Profil'" />
+                  </div>
+                  <div class="card-face card-back">
+                    <!-- Placeholder image URL, harap ganti dengan file lokal 'foto2.jpg' atau URL nyata -->
+                    <img
+                      src="foto2.jpg"
+                      class="img-fluid hero-img"
+                      alt="Foto Profil Sisi Belakang"
+                      onerror="this.src='https://placehold.co/400x400/2a2a2a/f0f0f0?text=Foto+Alternatif'" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- About Section -->
+      <section id="about" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center" data-aos="fade-up">
+            Tentang Diri
+          </h2>
+          <div class="row align-items-center py-4">
+            <div class="col-lg-5 text-center mb-4 mb-lg-0" data-aos="zoom-in">
+              <!-- Placeholder image URL, harap ganti dengan file lokal 'foto.jpg' atau URL nyata -->
+              <img
+                src="foto3.jpg"
+                class="img-fluid about-img shadow"
+                alt="Foto Profil Izha"
+                onerror="this.src='https://placehold.co/300x300/2a2a2a/f0f0f0?text=Foto+Profil'" />
+            </div>
+            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+              <p class="lead text-accent">Latar Belakang & Filosofi Kerja</p>
+              <p class="text-secondary-muted">
+                Saya adalah Fullstack Developer yang memiliki pengalaman dalam
+                perancangan, pengembangan, dan pengelolaan aplikasi web
+                komprehensif. Saya menguasai teknologi modern seperti React.js,
+                Bootstrap, Laravel, dan Express.js, serta bisa dalam optimasi
+                database menggunakan MySQL dan SQL Server.
+              </p>
+              <p class="text-secondary-muted">
+                Lulusan Teknologi Informasi Universitas Brawijaya dengan IPK
+                3.88/4.00, saya tidak hanya fokus pada pembangunan
+                fungsionalitas, tetapi juga pada aspek Keamanan Siber
+                (Cybersecurity). Pengalaman saya mencakup implementasi REST API,
+                integrasi sistem, dan melakukan uji penetrasi (DoS, Brute Force)
+                untuk memastikan perangkat lunak yang saya kembangkan
+                benar-benar andal.
+              </p>
+              <div class="row pt-3">
+                <div class="col-md-6">
+                  <ul class="info-list text-light-muted">
+                    <li>
+                      <i class="fas fa-calendar-alt text-accent me-2"></i>
+                      Pendidikan: D3 Teknologi Informasi
+                    </li>
+                    <li>
+                      <i class="fas fa-graduation-cap text-accent me-2"></i>
+                      Universitas: Brawijaya
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="info-list text-light-muted">
+                    <li>
+                      <i class="fas fa-trophy text-accent me-2"></i> IPK:
+                      3.88/4.00
+                    </li>
+                    <li>
+                      <i class="fas fa-map-marker-alt text-accent me-2"></i>
+                      Lokasi: Malang, Indonesia
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="py-5 bg-card">
+        <div class="container">
+          <h2 class="section-title text-center" data-aos="fade-up">Keahlian</h2>
+
+          <div class="row mt-4">
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+              <h3 class="skill-group-title text-accent">
+                Frontend & Backend Development
+              </h3>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="skill-tag"
+                  ><i class="fab fa-html5 me-2"></i>HTML5</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-css3-alt me-2"></i>CSS3/Bootstrap</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-js me-2"></i>JavaScript</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-react me-2"></i>React.js</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-laravel me-2"></i>Laravel</span
+                >
+                <span class="skill-tag"
+                  ><i class="fab fa-node-js me-2"></i>Express.js</span
+                >
+                <span class="skill-tag">C#</span>
+              </div>
+
+              <h3 class="skill-group-title text-accent">
+                Database & Cyber Security
+              </h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-tag"
+                  ><i class="fas fa-database me-2"></i>MySQL</span
+                >
+                <span class="skill-tag">SQL Server</span>
+                <span class="skill-tag">RESTful API</span>
+                <span class="skill-tag">Keamanan Siber</span>
+                <span class="skill-tag">Penetration Testing</span>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left">
+              <h3 class="skill-group-title text-accent">
+                Best Practices & Tools
+              </h3>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="skill-tag"
+                  ><i class="fas fa-code-branch me-2"></i>Git / GitHub</span
+                >
+                <span class="skill-tag">OOP & SOLID</span>
+                <span class="skill-tag">Jaringan Komputer</span>
+                <span class="skill-tag">Otomasi Workflow</span>
+              </div>
+
+              <h3 class="skill-group-title text-accent">
+                Keahlian Diri (Soft Skills)
+              </h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-tag-soft"
+                  ><i class="fas fa-project-diagram me-2"></i>Manajemen
+                  Proyek</span
+                >
+                <span class="skill-tag-soft"
+                  ><i class="fas fa-users me-2"></i>Kolaborasi Tim</span
+                >
+                <span class="skill-tag-soft"
+                  ><i class="fas fa-handshake me-2"></i>Negosiasi</span
+                >
+                <span class="skill-tag-soft"
+                  ><i class="fas fa-lightbulb me-2"></i>Pemecahan Masalah</span
+                >
+                <span class="skill-tag-soft"
+                  ><i class="fas fa-brain me-2"></i>Berpikir Analitis</span
+                >
+                <span class="skill-tag-soft"
+                  ><i class="fas fa-star me-2"></i>Adaptif & Cepat Belajar</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center" data-aos="fade-up">
+            Pengalaman
+          </h2>
+          <div class="row mt-4 justify-content-center">
+            <div class="col-lg-10">
+              <div class="experience-timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                  <div class="timeline-dot bg-accent"></div>
+                  <div class="timeline-content card-clean p-4">
+                    <span class="exp-date">Jul 2025 - Sekarang</span>
+                    <h5 class="exp-title text-accent">
+                      IT Programmer | KLINIK GIGI CAVODENTAL
+                    </h5>
+                    <p class="exp-subtitle text-light-muted">Part Time</p>
+                    <ul class="exp-list text-secondary-muted">
+                      <li>
+                        Mengembangkan Landing Page & Pendaftaran Online,
+                        memfasilitasi onboarding pasien yang efisien.
+                      </li>
+                      <li>
+                        Membangun dashboard data internal dan mengelola basis
+                        data pasien.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div
+                  class="timeline-item"
+                  data-aos="fade-up"
+                  data-aos-delay="100">
+                  <div class="timeline-dot bg-accent"></div>
+                  <div class="timeline-content card-clean p-4">
+                    <span class="exp-date">Ags 2024 - Jan 2025</span>
+                    <h5 class="exp-title text-accent">
+                      IT Programmer | PT PG RAJAWALI 1 UNIT PG KREBET BARU
+                    </h5>
+                    <p class="exp-subtitle text-light-muted">Internship</p>
+                    <ul class="exp-list text-secondary-muted">
+                      <li>
+                        Mengembangkan aplikasi web Full-stack menggunakan PHP
+                        Native dengan integrasi SQL Server.
+                      </li>
+                      <li>
+                        Melakukan penetration testing (DoS) dan menerapkan
+                        solusi mitigasi keamanan.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div
+                  class="timeline-item"
+                  data-aos="fade-up"
+                  data-aos-delay="200">
+                  <div class="timeline-dot bg-accent"></div>
+                  <div class="timeline-content card-clean p-4">
+                    <span class="exp-date">Ags 2024</span>
+                    <h5 class="exp-title text-accent">
+                      UI/UX Designer | GAMELAB INDONESIA
+                    </h5>
+                    <p class="exp-subtitle text-light-muted">Internship</p>
+                    <ul class="exp-list text-secondary-muted">
+                      <li>
+                        Merancang antarmuka pengguna (UI) dan pengalaman
+                        pengguna (UX) yang intuitif untuk platform.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-5 bg-card">
+        <div class="container">
+          <h2 class="section-title text-center" data-aos="fade-up">Projek</h2>
+
+          <div class="row g-4 mt-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+              <div class="project-card-v2 p-4 h-100">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3">
+                  <i class="fas fa-folder project-icon text-accent"></i>
+                  <div>
+                    <a href="#" target="_blank" class="project-link"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <h5 class="project-title text-light-muted">
+                  Sistem Booking dan Manajemen Pasien Dokter Gigi
+                </h5>
+                <p class="project-description text-secondary-muted">
+                  Mengembangkan website booking dan dashboard untuk mengelola
+                  jadwal dan data pasien dokter gigi.
+                </p>
+                <div class="project-tags">
+                  <span>Fullstack</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100">
+              <div class="project-card-v2 p-4 h-100">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3">
+                  <i class="fas fa-shield-alt project-icon text-accent"></i>
+                  <div>
+                    <a href="#" target="_blank" class="project-link"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <h5 class="project-title text-light-muted">
+                  Penetration Testing Keamanan Server PG Krebet Baru
+                </h5>
+                <p class="project-description text-secondary-muted">
+                  Melakukan uji serangan DoS dan Brute Force untuk
+                  mengidentifikasi kerentanan server dan database.
+                </p>
+                <div class="project-tags">
+                  <span>Cybersecurity</span>
+                  <span>SQL Server</span>
+                  <span>Jaringan</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200">
+              <div class="project-card-v2 p-4 h-100">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3">
+                  <i class="fas fa-chart-line project-icon text-accent"></i>
+                  <div>
+                    <a href="#" target="_blank" class="project-link"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <h5 class="project-title text-light-muted">
+                  Sistem Formulir dan Dashboard Fabrikasi Karyawan Welder
+                </h5>
+                <p class="project-description text-secondary-muted">
+                  Merancang website formulir dan dashboard untuk mengelola data
+                  karyawan divisi fabrikasi welder.
+                </p>
+                <div class="project-tags">
+                  <span>PHP Native</span>
+                  <span>Dashboard</span>
+                  <span>REST API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-5 text-center">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+              <h2 class="section-title" data-aos="fade-up">
+                Tertarik untuk Berkolaborasi?
+              </h2>
+              <p
+                class="lead text-secondary-muted mb-4"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                Mari kita wujudkan ide Anda. Kirimkan email atau hubungi saya
+                via LinkedIn sekarang.
+              </p>
+
+              <div
+                class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                <a
+                  href="mailto:masizha6@gmail.com"
+                  class="btn btn-accent btn-lg"
+                  ><i class="fas fa-envelope me-2"></i> Kirim Email</a
+                >
+                <a
+                  href="http://www.linkedin.com/in/muhammad-izha-mahendra-2701a8261"
+                  target="_blank"
+                  class="btn btn-outline-light-muted btn-lg"
+                  ><i class="fab fa-linkedin me-2"></i> LinkedIn</a
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-6 text-center text-lg-start">
+              <h3
+                class="text-accent fw-bold mb-3"
+                data-aos="fade-up"
+                data-aos-delay="300">
+                Sertifikasi Penting
+              </h3>
+              <!-- BAGIAN YANG DIPERBAIKI: Menambahkan ikon ke setiap link sertifikasi -->
+              <div
+                class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3"
+                data-aos="fade-up"
+                data-aos-delay="400">
+                <a
+                  href="https://drive.google.com/file/d/15jEtdr0eWtqy0fLsWsIvGSJdYQ6CJcoe/view?usp=sharing"
+                  target="_blank"
+                  class="link-minimal"
+                  title="Junior Web Developer">
+                  <i class="fas fa-laptop-code text-accent"></i>
+                  Junior Web Developer
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1Obbyf35DSHVa5_02CAB7yUdg2FpsOK2P/view?usp=sharing"
+                  target="_blank"
+                  class="link-minimal"
+                  title="UI/UX Designer">
+                  <i class="fas fa-paint-brush text-accent"></i>
+                  UI/UX Designer
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1h7sQTX3Xg1n9nCTuPJ-17dyPtx0D_ODn/view?usp=drive_link"
+                  target="_blank"
+                  class="link-minimal"
+                  title="Microsoft Office">
+                  <i class="far fa-file-alt text-accent"></i>
+                  MS Office
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/19GMddgBows59xrbqBduHpV1DDCgFr46R/view?usp=sharing"
+                  target="_blank"
+                  class="link-minimal"
+                  title="Microsoft Office">
+                  <i class="far fa-file-alt text-accent"></i>
+                  Curriculum Vitae
+                </a>
+              </div>
+              <!-- AKHIR BAGIAN YANG DIPERBAIKI -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4 border-top">
+      <div class="container text-center">
+        <div class="social-links d-flex justify-content-center gap-4 mb-3">
+          <a
+            href="http://www.linkedin.com/in/muhammad-izha-mahendra-2701a8261"
+            target="_blank"
+            class="link-minimal-icon"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="mailto:masizha6@gmail.com"
+            class="link-minimal-icon"
+            title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="tel:0895366882339" class="link-minimal-icon" title="Telepon"
+            ><i class="fas fa-phone"></i
+          ></a>
+        </div>
+        <p class="mb-0 small text-secondary-muted">
+          Didesain & Dikembangkan oleh Muhammad Izha Mahendra &copy; 2025
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 1. AOS Initialization
+        AOS.init({
+          duration: 1000,
+          once: true,
+        });
+
+        // 2. Theme Toggle Functionality (Jika Anda benar-benar menghapusnya, bagian ini tidak akan dieksekusi)
+        const themeToggle = document.getElementById("theme-toggle");
+        const htmlElement = document.documentElement;
+
+        function updateThemeIcon(theme) {
+          if (themeToggle) {
+            // Cek apakah tombol masih ada
+            const icon = theme === "dark" ? "fa-moon" : "fa-sun";
+            themeToggle.innerHTML = `<i class="fas ${icon}"></i>`;
+          }
+        }
+
+        function applyTheme(theme) {
+          htmlElement.setAttribute("data-theme", theme);
+          localStorage.setItem("theme", theme);
+          updateThemeIcon(theme);
+        }
+
+        // Load saved theme or default to dark
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        applyTheme(savedTheme);
+
+        if (themeToggle) {
+          // Cek apakah tombol masih ada sebelum menambahkan listener
+          themeToggle.addEventListener("click", () => {
+            const currentTheme = htmlElement.getAttribute("data-theme");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            applyTheme(newTheme);
+          });
+        }
+
+        // 3. Navbar Shrink (Bootstrap style)
+        // ... (kode Navbar Shrink tetap sama, tidak saya ulangi di sini untuk singkat)
+
+        // 4. Perbaikan Preloader Handling
+        const preloader = document.getElementById("preloader");
+
+        // Gunakan DOMContentLoaded (HTML sudah siap) untuk segera menyembunyikan preloader
+        setTimeout(() => {
+          if (preloader) {
+            preloader.classList.add("hidden");
+          }
+        }, 500); // 500ms delay for a smoother fade out
+
+        // 5. Hero Image Flip on Touch
+        // ... (kode Hero Image Flip tetap sama, tidak saya ulangi di sini untuk singkat)
+      });
+
+      // Pastikan Anda hanya memiliki satu listener untuk DOMContentLoaded!
+      // Jika Anda menggunakan window.addEventListener('load', ...), hapus atau ganti dengan DOMContentLoaded
+    </script>
+  </body>
+</html>
