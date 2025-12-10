@@ -11,14 +11,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Menambahkan Font Inter dari Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Preloader -->
     <div id="preloader">
       <div class="loader-content">
         <div class="loader-spinner"></div>
@@ -26,7 +24,6 @@
       </div>
     </div>
 
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg fixed-top shadow" id="mainNav">
       <div class="container">
         <a class="navbar-brand fw-bold text-accent" href="#hero">Mahendra</a>
@@ -54,13 +51,20 @@
             <li class="nav-item me-3">
               <a class="nav-link" href="#projects">Projek</a>
             </li>
+            <li class="nav-item d-flex align-items-center">
+              <button
+                id="theme-toggle"
+                class="btn btn-sm"
+                aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <main>
-      <!-- Hero Section -->
       <header
         id="hero"
         class="d-flex align-items-center justify-content-center text-center">
@@ -84,10 +88,11 @@
                 >Lihat Projek Saya</a
               >
               <a
-                href="mailto:masizha6@gmail.com"
+                href="https://wa.me/62895366882339?text=Halo%20izhaa%20saya%20ingin%20komunikasi"
                 class="btn btn-outline-light-muted btn-lg"
-                >Hubungi Saya</a
-              >
+                target="_blank">
+                Hubungi Saya
+              </a>
             </div>
 
             <div
@@ -96,17 +101,15 @@
               <div class="card-flip-container touch-move">
                 <div class="card-flip-inner">
                   <div class="card-face card-front">
-                    <!-- Placeholder image URL, harap ganti dengan file lokal 'foto.jpg' atau URL nyata -->
                     <img
-                      src="foto.jpg"
+                      src="img/foto.jpg"
                       class="img-fluid hero-img"
                       alt="Foto Profil Utama"
                       onerror="this.src='https://placehold.co/400x400/2a2a2a/f0f0f0?text=Foto+Profil'" />
                   </div>
                   <div class="card-face card-back">
-                    <!-- Placeholder image URL, harap ganti dengan file lokal 'foto2.jpg' atau URL nyata -->
                     <img
-                      src="foto2.jpg"
+                      src="img/foto2.jpg"
                       class="img-fluid hero-img"
                       alt="Foto Profil Sisi Belakang"
                       onerror="this.src='https://placehold.co/400x400/2a2a2a/f0f0f0?text=Foto+Alternatif'" />
@@ -118,7 +121,6 @@
         </div>
       </header>
 
-      <!-- About Section -->
       <section id="about" class="py-5">
         <div class="container">
           <h2 class="section-title text-center" data-aos="fade-up">
@@ -126,9 +128,8 @@
           </h2>
           <div class="row align-items-center py-4">
             <div class="col-lg-5 text-center mb-4 mb-lg-0" data-aos="zoom-in">
-              <!-- Placeholder image URL, harap ganti dengan file lokal 'foto.jpg' atau URL nyata -->
               <img
-                src="foto3.jpg"
+                src="img/foto3.jpg"
                 class="img-fluid about-img shadow"
                 alt="Foto Profil Izha"
                 onerror="this.src='https://placehold.co/300x300/2a2a2a/f0f0f0?text=Foto+Profil'" />
@@ -160,7 +161,7 @@
                     </li>
                     <li>
                       <i class="fas fa-graduation-cap text-accent me-2"></i>
-                      Universitas: Brawijaya
+                      Universitas Brawijaya
                     </li>
                   </ul>
                 </div>
@@ -182,7 +183,6 @@
         </div>
       </section>
 
-      <!-- Skills Section -->
       <section id="skills" class="py-5 bg-card">
         <div class="container">
           <h2 class="section-title text-center" data-aos="fade-up">Keahlian</h2>
@@ -270,7 +270,6 @@
         </div>
       </section>
 
-      <!-- Experience Section -->
       <section id="experience" class="py-5">
         <div class="container">
           <h2 class="section-title text-center" data-aos="fade-up">
@@ -349,7 +348,6 @@
         </div>
       </section>
 
-      <!-- Projects Section -->
       <section id="projects" class="py-5 bg-card">
         <div class="container">
           <h2 class="section-title text-center" data-aos="fade-up">Projek</h2>
@@ -443,7 +441,6 @@
         </div>
       </section>
 
-      <!-- Contact Section -->
       <section id="contact" class="py-5 text-center">
         <div class="container">
           <div class="row align-items-start">
@@ -482,9 +479,8 @@
                 class="text-accent fw-bold mb-3"
                 data-aos="fade-up"
                 data-aos-delay="300">
-                Sertifikasi Penting
+                Sertifikasi
               </h3>
-              <!-- BAGIAN YANG DIPERBAIKI: Menambahkan ikon ke setiap link sertifikasi -->
               <div
                 class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3"
                 data-aos="fade-up"
@@ -522,14 +518,12 @@
                   Curriculum Vitae
                 </a>
               </div>
-              <!-- AKHIR BAGIAN YANG DIPERBAIKI -->
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer py-4 border-top">
       <div class="container text-center">
         <div class="social-links d-flex justify-content-center gap-4 mb-3">
@@ -556,7 +550,6 @@
       </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -567,56 +560,80 @@
           once: true,
         });
 
-        // 2. Theme Toggle Functionality (Jika Anda benar-benar menghapusnya, bagian ini tidak akan dieksekusi)
+        // 2. Theme Toggle Functionality 🌙
         const themeToggle = document.getElementById("theme-toggle");
         const htmlElement = document.documentElement;
 
         function updateThemeIcon(theme) {
           if (themeToggle) {
-            // Cek apakah tombol masih ada
+            // Tentukan ikon (fa-moon untuk dark, fa-sun untuk light)
             const icon = theme === "dark" ? "fa-moon" : "fa-sun";
             themeToggle.innerHTML = `<i class="fas ${icon}"></i>`;
+
+            // Atur class Bootstrap untuk tombol agar sesuai tema
+            const buttonClass =
+              theme === "dark" ? "btn-outline-light" : "btn-outline-dark";
+            themeToggle.className = `btn btn-sm ${buttonClass}`;
           }
         }
 
         function applyTheme(theme) {
+          // Mengubah atribut data-theme pada elemen <html>
           htmlElement.setAttribute("data-theme", theme);
-          localStorage.setItem("theme", theme);
+          localStorage.setItem("theme", theme); // Menyimpan preferensi di browser
           updateThemeIcon(theme);
         }
 
-        // Load saved theme or default to dark
+        // Load saved theme or default to dark saat halaman dimuat
         const savedTheme = localStorage.getItem("theme") || "dark";
         applyTheme(savedTheme);
 
         if (themeToggle) {
-          // Cek apakah tombol masih ada sebelum menambahkan listener
           themeToggle.addEventListener("click", () => {
             const currentTheme = htmlElement.getAttribute("data-theme");
+            // Toggle tema: dark -> light, light -> dark
             const newTheme = currentTheme === "dark" ? "light" : "dark";
             applyTheme(newTheme);
           });
         }
 
-        // 3. Navbar Shrink (Bootstrap style)
-        // ... (kode Navbar Shrink tetap sama, tidak saya ulangi di sini untuk singkat)
-
-        // 4. Perbaikan Preloader Handling
+        // 3. Perbaikan Preloader Handling
         const preloader = document.getElementById("preloader");
-
-        // Gunakan DOMContentLoaded (HTML sudah siap) untuk segera menyembunyikan preloader
-        setTimeout(() => {
-          if (preloader) {
+        if (preloader) {
+          // Beri sedikit jeda agar animasi preloader sempat terlihat
+          setTimeout(() => {
             preloader.classList.add("hidden");
+          }, 500); // 500ms delay
+        }
+
+        // 4. Navbar Shrink (Bootstrap style - perlu CSS di file style.css)
+        const navbarShrink = function () {
+          const navbar = document.getElementById("mainNav");
+          if (!navbar) {
+            return;
           }
-        }, 500); // 500ms delay for a smoother fade out
+          if (window.scrollY === 0) {
+            navbar.classList.remove("navbar-shrink");
+          } else {
+            navbar.classList.add("navbar-shrink");
+          }
+        };
 
-        // 5. Hero Image Flip on Touch
-        // ... (kode Hero Image Flip tetap sama, tidak saya ulangi di sini untuk singkat)
+        // Shrink the navbar when page is scrolled
+        navbarShrink();
+
+        // Shrink the navbar when page is scrolled
+        document.addEventListener("scroll", navbarShrink);
+
+        // 5. Hero Image Flip on Touch (Jika Anda memerlukan ini)
+        const cardContainer = document.querySelector(".card-flip-container");
+        if (cardContainer) {
+          cardContainer.addEventListener("click", () => {
+            cardContainer.classList.toggle("flipped");
+          });
+        }
       });
-
-      // Pastikan Anda hanya memiliki satu listener untuk DOMContentLoaded!
-      // Jika Anda menggunakan window.addEventListener('load', ...), hapus atau ganti dengan DOMContentLoaded
+      // PERHATIAN: Semua logika script sekarang berada di dalam satu DOMContentLoaded.
     </script>
   </body>
 </html>
